@@ -5,6 +5,7 @@ It is built with:
  - React
  - HTML
  - Vite
+ - Tailwind CSS
 
 # Figma Design
 Also a work in progress!
