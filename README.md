@@ -5,3 +5,8 @@ It is built with:
  - React
  - HTML
  - Vite
+
+# Figma Design
+Also a work in progress!
+
+https://www.figma.com/design/mD9UDQMdPTYlL6YC0nrYgu/Portfolio?node-id=0-1&t=13baPwZBb9O3CL8Z-1
