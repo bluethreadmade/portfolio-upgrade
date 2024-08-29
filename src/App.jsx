@@ -1,11 +1,9 @@
 function App() {
-
   return (
     <>
-      <div>
-      <h1 className="text-3xl font-serif underline ">
-      Hello world!
-    </h1>      </div>
+      <div className="bg-reseda-green p-4" >
+        <h1 className="text-3xl font-serif">Hello world!</h1>
+      </div>
     </>
   );
 }
