@@ -16,7 +16,12 @@ export default {
       'reseda-green':'#798E7B',
       'gunmetal':'#143642'
     },
-    extend: {},
+    
+    extend: {
+      screens: {
+      'xs': '425px'
+    },
+  },
   },
   plugins: [],
 }
