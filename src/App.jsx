@@ -1,10 +1,9 @@
-import Header from './components/Header'
+import Header1 from './components/Header1'
 
 function App() {
   return (
       <div className="p-4" >
-        <Header />
-        <h1 className="text-3xl font-serif">Hello world!</h1>
+        <Header1 />
       </div>
   );
 }
