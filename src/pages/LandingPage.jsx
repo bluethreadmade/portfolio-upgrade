@@ -1,16 +1,17 @@
 export default function LandingPage() {
   return (
     <div>
-      <div className="flex flex-row">
-        <img src="/public/assets/images/portfolio image.png" className=""></img>
+      <div className="flex flex-col md:flex-row mt-5 lg:mt-20 lg:justify-around">
+        {/* portfolio image */}
+        <img className="hidden md:block object-scale-down" src="/public/assets/images/portfolio image.png" ></img>
         <div className="flex flex-col items-center">
-          <h1 className="font-sans text-5xl">Megan McNeill</h1>
+          <h1 className="hidden lg:block font-sans text-5xl mb-8">Megan McNeill</h1>
           {/* text and square wrapper */}
-          <div className="relative">
+          <div className="relative p-8 lg:p-20">
             {/* square */}
-            <div className="absolute inset-0 bg-french-gray transform rotate-2 -z-10 p-4"></div>
+            <div className="absolute inset-0  bg-french-gray transform rotate-2 -z-10 p-4"></div>
             {/* text wrapper*/}
-            <div className="relative p-4">
+            <div className="relative max-w-2xl p-2 text-base lg:text-xl">
               <p className="mb-4 indent-10">
                 With 14 years of hands-on experience in product design and
                 engineering, I’ve honed my ability to create impactful solutions
@@ -39,7 +40,8 @@ export default function LandingPage() {
           </div>
         </div>
       </div>
-      <div className="absolute bottom-0 right-0">
+      {/* graph image */}
+      <div className="absolute bottom-0 right-0 -z-20">
         <img
           src="/public/assets/images/Graph.png"
           alt="Graph Image"
