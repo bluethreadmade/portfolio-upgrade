@@ -2,8 +2,8 @@ export default function LandingPage() {
   return (
     <div>
       <div className="flex flex-col md:flex-row mt-5 lg:mt-20 lg:justify-around">
-        {/* portfolio image */}
-        <img className="hidden md:block object-scale-down" src="/public/assets/images/portfolio image.png" ></img>
+        {/* headshot */}
+        <img className="block object-scale-down mx-20 min-w-44 max-w-80" src="/assets/images/portfolio image.png" ></img>
         <div className="flex flex-col items-center">
           <h1 className="hidden lg:block font-sans text-5xl mb-8">Megan McNeill</h1>
           {/* text and square wrapper */}
@@ -43,7 +43,7 @@ export default function LandingPage() {
       {/* graph image */}
       <div className="absolute bottom-0 right-0 -z-20">
         <img
-          src="/public/assets/images/Graph.png"
+          src="/assets/images/Graph.png"
           alt="Graph Image"
           className=""
         />
