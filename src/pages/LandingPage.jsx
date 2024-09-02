@@ -1,9 +1,9 @@
 export default function LandingPage() {
   return (
     <div>
-      <div className="flex flex-col md:flex-row mt-5 lg:mt-20 lg:justify-around">
+      <div className="flex flex-col items-center md:flex-row mt-5 lg:mt-20 lg:justify-around">
         {/* headshot */}
-        <img className="block object-scale-down mx-20 min-w-44 max-w-80" src="/assets/images/portfolio image.png" ></img>
+        <img className="block object-scale-down mb-10 mx-20 min-w-44 max-w-60 lg:max-w-lg" src="/assets/images/portfolio image.png" ></img>
         <div className="flex flex-col items-center">
           <h1 className="hidden lg:block font-sans text-5xl mb-8">Megan McNeill</h1>
           {/* text and square wrapper */}
@@ -11,7 +11,7 @@ export default function LandingPage() {
             {/* square */}
             <div className="absolute inset-0  bg-french-gray transform rotate-2 -z-10 p-4"></div>
             {/* text wrapper*/}
-            <div className="relative max-w-2xl p-2 text-base lg:text-xl">
+            <div className="relative max-w-4xl p-2 text-base lg:text-xl">
               <p className="mb-4 indent-10">
                 With 14 years of hands-on experience in product design and
                 engineering, I’ve honed my ability to create impactful solutions
