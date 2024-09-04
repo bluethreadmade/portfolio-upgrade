@@ -10,6 +10,7 @@ import "./index.css";
 // Bringing in the pages the router will use to conditionally show the appropriate views
 import App from "./App.jsx";
 import LandingPage from "./pages/LandingPage.jsx";
+import ProjectsPage from "./pages/ProjectsPage.jsx";
 
 // Define the accessible routes, and which components respond to which URL
 const router = createBrowserRouter([
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <LandingPage />
+      },
+      {
+        path: 'projects',
+        element: <ProjectsPage />
       }
     ]
   },
