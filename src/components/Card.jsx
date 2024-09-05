@@ -18,7 +18,7 @@ export default function Card({ title, description, image }) {
           </h2>
           <p
             id="projectDescription"
-            className="mb-6 ml-4 text-lg font-sans text-gunmetal"
+            className="mb-6 ml-4 text-lg font-sans text-gunmetal flex-grow overflow-hidden min-h-0" style={{ minHeight: 0 }}
           >
             {description}
           </p>
