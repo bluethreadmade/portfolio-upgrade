@@ -6,10 +6,10 @@ export default function Card({ title, description, image }) {
   return (
     <div
       id="card"
-      className="flex flex-col max-w-[400px] max-h-[530px] w-full h-auto p-8 pb-4 bg-white border border-gray-200 rounded-2xl drop-shadow-xl"
-      style={{ aspectRatio: '389 / 521' }}
+      className="flex flex-col max-w-[500px] max-h-[667px] w-full h-auto p-8 pb-4 bg-white border border-gray-200 rounded-2xl drop-shadow-xl"
+      style={{ aspectRatio: '.75' }}
     >
-          <img id="projectImage" src={image} className="rounded-lg drop-shadow-md"></img>
+          <img id="projectImage" src={image} className="rounded-lg drop-shadow-md max-h-[333px]" style={{ aspectRatio: '1.5' }}></img>
           <h2
             id="title"
             className="my-6 text-4xl font-serif tracking-tight text-gunmetal"
@@ -22,7 +22,7 @@ export default function Card({ title, description, image }) {
           >
             {description}
           </p>
-          <div className="flex flex-col w-full">
+          <div className="flex flex-col w-full mt-auto">
             <NavInProjects />
           </div>
     </div>
