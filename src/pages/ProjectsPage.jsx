@@ -1,7 +1,7 @@
 import Card from "../components/Card";
 
 
-const project = [
+export const project = [
     {
       title: "Craft Corner",
       description: `This application was created for new crafters looking for a way in and for passionate hobbyists looking to learn, grow and connect.`,
@@ -63,4 +63,4 @@ export default function ProjectsPage() {
       ))}
     </div>
   );
-}
+};

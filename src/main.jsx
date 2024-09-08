@@ -11,6 +11,7 @@ import "./index.css";
 import App from "./App.jsx";
 import LandingPage from "./pages/LandingPage.jsx";
 import ProjectsPage from "./pages/ProjectsPage.jsx";
+import Example from "./components/ProjectsCarousel.jsx";
 
 // Define the accessible routes, and which components respond to which URL
 const router = createBrowserRouter([
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: 'projects',
         element: <ProjectsPage />
+      },
+      {
+        path: 'example',
+        element: <Example />
       }
     ]
   },
