@@ -29,17 +29,31 @@ const HorizontalScrollCarousel = () => {
 
   const x = useTransform(scrollYProgress, [0, 1], ["1%", "-45%"]);
 
+// Color sets
+const colorSets = [
+    { bgColor: '#FFFFFF', buttonColor: '#798E7B', buttonTextColor: '#000000' }, // Set 1 - white bkg
+    { bgColor: '#BFCCD8', buttonColor: '#143642', buttonTextColor: '#FFFFFF' }, // Set 2 - blue bkg
+    { bgColor: '#8EA791', buttonColor: '#143642', buttonTextColor: '#FFFFFF' }, // Set 3 - green bkg
+    ];
+
   return (
     <section ref={targetRef} className="relative h-[150vh]">
       <div className="sticky top-0 flex h-screen items-center overflow-hidden">
         <motion.div style={{ x }} className="flex gap-4">
-          {project.map((item) => {
+          {project.map((item, index) => {
+            // Select color set using modulo to cycle through colorSets
+            const colorSetIndex = index % colorSets.length;
+            const colors = colorSets[colorSetIndex];
+
             return (
               <Card
                 key={item.title}
                 title={item.title}
                 description={item.description}
                 image={item.image}
+                bgColor={colors.bgColor}
+                buttonColor={colors.buttonColor}
+                buttonTextColor={colors.buttonTextColor}
               />
             );
           })}
