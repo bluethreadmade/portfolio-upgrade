@@ -5,7 +5,7 @@ export default function Card({ title, description, image }) {
   return (
     <div
       id="card"
-      className="flex flex-col max-h-[900px] min-h-[667px] w-full h-auto p-8 pb-4 bg-white border border-gray-200 rounded-2xl drop-shadow-xl"
+      className="flex flex-col max-h-[1200px] min-h-[800px] w-full h-auto p-8 pb-4 bg-white border border-gray-200 rounded-2xl drop-shadow-xl"
       style={{ aspectRatio: ".75" }}
     >
       <img
