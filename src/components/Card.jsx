@@ -1,12 +1,12 @@
 import PropTypes from "prop-types";
 import NavInProjects from "./NavInProjects";
 
-export default function Card({ title, description, image, bgColor, buttonColor, buttonTextColor }) {
+export default function Card({ title, description, image, bgColor, buttonColor, buttonTextColor, rotation }) {
   return (
     <div
       id="card"
       className="flex flex-col max-h-[1200px] min-h-[800px] w-full h-auto p-8 pb-4 bg-white border border-gray-200 rounded-2xl drop-shadow-xl"
-      style={{ aspectRatio: ".75", backgroundColor: bgColor }}
+      style={{ aspectRatio: ".75", backgroundColor: bgColor, rotate: rotation }}
     >
       <img
         id="projectImage"
@@ -16,7 +16,7 @@ export default function Card({ title, description, image, bgColor, buttonColor, 
       ></img>
       <h2
         id="title"
-        className="my-6 text-4xl font-serif tracking-tight text-gunmetal"
+        className="my-6 text-5xl font-serif tracking-tight text-gunmetal"
       >
         {title}
       </h2>
@@ -40,5 +40,6 @@ Card.propTypes = {
   image: PropTypes.string.isRequired,
   buttonTextColor: PropTypes.string.isRequired,
   bgColor: PropTypes.string.isRequired,
-  buttonColor: PropTypes.string.isRequired
+  buttonColor: PropTypes.string.isRequired,
+  rotation: PropTypes.string.isRequired
 };

@@ -36,6 +36,14 @@ const colorSets = [
     { bgColor: '#8EA791', buttonColor: '#143642', buttonTextColor: '#FFFFFF' }, // Set 3 - green bkg
     ];
 
+// Rotations
+const rotationValues = [
+    { rotation: '-6deg' },
+    { rotation: '-1.5deg' },
+    { rotation: '6deg' },
+    { rotation: '1.5deg' },
+];
+
   return (
     <section ref={targetRef} className="relative h-[150vh]">
       <div className="sticky top-0 flex h-screen items-center overflow-hidden">
@@ -44,6 +52,10 @@ const colorSets = [
             // Select color set using modulo to cycle through colorSets
             const colorSetIndex = index % colorSets.length;
             const colors = colorSets[colorSetIndex];
+
+            // Select rotation using modulo to cycle through rotations
+            const rotationIndex = index % rotationValues.length;
+            const rotations = rotationValues[rotationIndex];
 
             return (
               <Card
@@ -54,6 +66,7 @@ const colorSets = [
                 bgColor={colors.bgColor}
                 buttonColor={colors.buttonColor}
                 buttonTextColor={colors.buttonTextColor}
+                rotation={rotations.rotation}
               />
             );
           })}

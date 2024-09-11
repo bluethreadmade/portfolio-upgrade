@@ -4,7 +4,7 @@ export default {
   theme: {
     fontFamily: {
       sans: ["Arimo"],
-      serif: ['"IBM  Plex Sans"'],
+      serif: ['"IBM  Plex Serif"'],
     },
     
     extend: {
