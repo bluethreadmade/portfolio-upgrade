@@ -4,9 +4,11 @@ import { Outlet } from 'react-router-dom'
 
 function App() {
   return (
-      <div className="p-4 flex flex-col" >
+      <div className="p-2 lg:p-4 flex flex-col" >
         <Header1 />
-        <Outlet />
+        < main className="flex-grow">
+          <Outlet />
+        </main>
         <MainPopupButton />
       </div>
   );

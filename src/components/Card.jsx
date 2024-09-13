@@ -5,7 +5,7 @@ export default function Card({ title, description, image, bgColor, buttonColor, 
   return (
     <div
       id="card"
-      className="flex flex-col max-h-[1200px] min-h-[800px] w-full h-auto p-8 pb-4 bg-white border border-gray-200 rounded-2xl drop-shadow-xl"
+      className="flex flex-col min-w-[200px] max-w-full h-auto p-2 lg:p-8 pb-4 bg-white border border-gray-200 rounded-2xl drop-shadow-xl"
       style={{ aspectRatio: ".75", backgroundColor: bgColor, rotate: rotation }}
     >
       <img
@@ -16,13 +16,13 @@ export default function Card({ title, description, image, bgColor, buttonColor, 
       ></img>
       <h2
         id="title"
-        className="my-6 text-5xl font-serif tracking-tight text-gunmetal"
+        className="my-6 text-lg lg:text-5xl font-serif text-gunmetal"
       >
         {title}
       </h2>
       <p
         id="projectDescription"
-        className="mb-6 ml-4 text-lg font-sans text-gunmetal flex-grow overflow-hidden min-h-0"
+        className="mb-6 ml-4 text-sm lg:text-xl font-sans text-gunmetal flex-grow overflow-hidden min-h-0"
         style={{ minHeight: 0}}
       >
         {description}
