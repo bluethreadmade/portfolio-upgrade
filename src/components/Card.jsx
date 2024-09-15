@@ -5,7 +5,7 @@ export default function Card({ title, description, image, bgColor, buttonColor, 
   return (
     <div
       id="card"
-      className="flex flex-col min-w-[200px] max-w-full h-auto p-2 lg:p-8 pb-4 bg-white border border-gray-200 rounded-2xl drop-shadow-xl"
+      className="flex flex-col min-w-[280px] max-w-full h-auto p-2 lg:p-8 pb-4 my-4 bg-white border border-gray-200 rounded-2xl drop-shadow-xl"
       style={{ aspectRatio: ".75", backgroundColor: bgColor, rotate: rotation }}
     >
       <img
