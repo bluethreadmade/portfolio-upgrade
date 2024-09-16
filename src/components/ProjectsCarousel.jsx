@@ -56,7 +56,7 @@ useEffect(() => {
 
   return (
     <section ref={targetRef} className="relative min-h-[150vh]">
-      <div className="sticky top-0 flex items-center overflow-hidden">
+      <div className="sticky top-0 flex items-center overflow-hidden pl-16">
         <motion.div style={{ x }} className="flex gap-4">
           {project.map((item, index) => {
             // Select color set using modulo to cycle through colorSets
